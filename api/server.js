@@ -5,7 +5,7 @@ var Schema = mongoose.Schema;
 
 server.listen(3000);
 
-mongoose.connect('mongodb://localhost/ventuchat');
+mongoose.connect('mongodb://localhost/ventuchat', {useMongoClient: true});
 
 function handler(request, response) {
     response.write('Hello');
