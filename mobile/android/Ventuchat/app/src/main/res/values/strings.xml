@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Ventuchat</string>
+
+    <string name="main_logo_image">Logo</string>
+    <string name="main_nickname_label">Digite seu nickname:</string>
+    <string name="main_nickname_input">Nickname…</string>
+    <string name="main_entry_button">Entrar</string>
+
+    <string name="chat_list_author">U</string>
+    <string name="chat_list_name_initial">Name</string>
+    <string name="chat_list_message">Message</string>
+    <string name="chat_list_time">hh:MM</string>
+
+    <string name="chat_message_input">Digite sua mensagem aqui…</string>
+    <string name="chat_send_button">Enviar</string>
+
+    <string name="menu_action_sound">Som</string>
+    <string name="menu_action_close">Sair</string>
+</resources>

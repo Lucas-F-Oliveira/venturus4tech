@@ -1,0 +1,12 @@
+<div class="messageList" #scrollMe>
+	<ul id="messageList" >
+		<app-chat-item *ngFor="let message of messageList" text="{{message.message}}" time="{{message.time}}" author="{{message.author}}"></app-chat-item>
+	</ul>
+</div>
+
+<textarea id="message" placeholder="Escreva sua mensagem aqui..." rows="3" 
+	(keypress)="getKeyPress($event)" [(ngModel)]="message"></textarea>
+
+<div class="btn-area">
+	<button type="submit" id="btnSend" class="confirm" (click)="sendMessage()">Enviar</button>
+</div>

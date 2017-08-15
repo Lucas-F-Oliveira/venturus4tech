@@ -1,0 +1,29 @@
+{
+  "name": "ventuchat-api",
+  "version": "0.0.1",
+  "description": "Venturus4Tech Chat Api",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+  },
+  "keywords": [
+    "node",
+    "mongodb",
+    "express",
+    "socket.io"
+  ],
+  "author": "Lucas Ferreira de Oliveira",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucas-F-Oliveira/venturus4tech.git"
+  },
+  "homepage": "https://github.com/Lucas-F-Oliveira/venturus4tech#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongoose": "^4.10.8",
+    "socket.io": "^1.4.4"
+  }
+}
