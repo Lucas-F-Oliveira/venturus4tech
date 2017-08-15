@@ -1,11 +1,3 @@
-//
-//  ChatController.swift
-//  Venturus4Tech
-//
-//  Created by Gustavo Reder Cazangi on 21/07/17.
-//  Copyright © 2017 Venturus. All rights reserved.
-//
-
 import UIKit
 import SocketIO
 import AVFoundation
@@ -69,7 +61,7 @@ class ChatController : UIViewController, UITableViewDataSource, UITextFieldDeleg
     }
     
     func getHistory() {
-        let url = URL(string: "http://172.24.39.18:3000/history")
+        let url = URL(string: "http://host:port/history")
         
         let task = URLSession.shared.dataTask(with: url!) {(data, response, error) in
             let json = try? JSONSerialization.jsonObject(with: data!, options: [])

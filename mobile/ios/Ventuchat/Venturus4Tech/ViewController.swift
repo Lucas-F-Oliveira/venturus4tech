@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  Venturus4Tech
-//
-//  Created by Gustavo Reder Cazangi on 21/07/17.
-//  Copyright © 2017 Venturus. All rights reserved.
-//
-
 import UIKit
 import SocketIO
 
@@ -28,7 +20,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
 
     @IBAction func onButtonClick(_ sender: Any) {
-        socket = SocketIOClient(socketURL: URL(string: "http://172.24.39.18:3000")!, config: [])
+        socket = SocketIOClient(socketURL: URL(string: "http://host:port")!, config: [])
         
         socket?.on(clientEvent: .connect) {data, ack in
             self.openChat()
